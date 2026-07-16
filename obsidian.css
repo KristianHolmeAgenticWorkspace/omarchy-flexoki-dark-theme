@@ -1,99 +1,82 @@
-/* Omarchy Theme for Obsidian - Flexoki Dark */
+/*
+Flexoki
+MIT License
+Copyright (c) 2023 Steph Ango
+https://stephango.com/flexoki
+*/
+.theme-light {
+  --color-red-rgb: 175, 48, 41;
+  --color-orange-rgb: 188, 82, 21;
+  --color-yellow-rgb: 173, 131, 1;
+  --color-green-rgb: 102, 128, 11;
+  --color-cyan-rgb: 36, 131, 123;
+  --color-blue-rgb: 32, 94, 166;
+  --color-purple-rgb: 94, 64, 157;
+  --color-pink-rgb: 160, 47, 111;
 
-.theme-dark, .theme-light {
-  /* Core colors */
-  --background-primary: #100F0F;
-  --background-primary-alt: #100F0F;
-  --background-secondary: #1C1B1A;
-  --background-secondary-alt: #1C1B1A;
-  --text-normal: #CECDC3;
+  --color-red: #AF3029;
+  --color-orange: #BC5215;
+  --color-yellow: #AD8301;
+  --color-green: #66800B;
+  --color-cyan: #24837B;
+  --color-blue: #205EA6;
+  --color-purple: #5E409D;
+  --color-pink: #A02F6F;
 
-  /* Selection colors */
-  --text-selection: #403E3C;
+  --accent-h: 175;
+  --accent-s: 57%;
+  --accent-l: 33%;
 
-  /* Border color */
-  --background-modifier-border: #343331;
+  --color-base-00: #FFFCF0;
+  --color-base-05: #FFFCF0;
+  --color-base-10: #F2F0E5;
+  --color-base-20: #F2F0E5;
+  --color-base-25: #E6E4D9;
 
-  /* Semantic heading colors */
-  --text-title-h1: #D14D41;
-  --text-title-h2: #879A39;
-  --text-title-h3: #D0A215;
-  --text-title-h4: #4385BE;
-  --text-title-h5: #CE5D97;
-  --text-title-h6: #3AA99F;
+  --color-base-30: #E6E4D9;
+  --color-base-35: #DAD8CE;
+  --color-base-40: #CECDC3;
 
-  /* Links and accents */
-  --text-link: #4385BE;
-  --text-accent: #4385BE;
-  --text-accent-hover: #4385BE;
-  --interactive-accent: #4385BE;
-  --interactive-accent-hover: #4385BE;
-
-  /* Muted text */
-  --text-muted: #878580;
-  --text-faint: #575653;
-
-  /* Code */
-  --code-normal: #3AA99F;
-
-  /* Errors and success */
-  --text-error: #D14D41;
-  --text-error-hover: #D14D41;
-  --text-success: #879A39;
-
-  /* Tags */
-  --tag-color: #3AA99F;
-  --tag-background: #403E3C;
-
-  /* Graph */
-  --graph-line: #575653;
-  --graph-node: #4385BE;
-  --graph-node-focused: #4385BE;
-  --graph-node-tag: #3AA99F;
-  --graph-node-attachment: #879A39;
+  --color-base-50: #B7B5AC;
+  --color-base-60: #878580;
+  --color-base-70: #6F6E69;
+  --color-base-100: #100F0F;
 }
+.theme-dark {
+  --color-red-rgb: 209, 77, 65;
+  --color-orange-rgb: 218, 112, 44;
+  --color-yellow-rgb:208, 162, 21;
+  --color-green-rgb: 135, 154, 57;
+  --color-cyan-rgb: 58, 169, 159;
+  --color-blue-rgb: 67, 133, 190;
+  --color-purple-rgb: 139, 126, 200;
+  --color-pink-rgb: 206, 93, 151;
 
-/* Headers */
-.cm-header-1, .markdown-rendered h1 { color: var(--text-title-h1); }
-.cm-header-2, .markdown-rendered h2 { color: var(--text-title-h2); }
-.cm-header-3, .markdown-rendered h3 { color: var(--text-title-h3); }
-.cm-header-4, .markdown-rendered h4 { color: var(--text-title-h4); }
-.cm-header-5, .markdown-rendered h5 { color: var(--text-title-h5); }
-.cm-header-6, .markdown-rendered h6 { color: var(--text-title-h6); }
+  --color-red: #D14D41;
+  --color-orange: #DA702C;
+  --color-yellow: #D0A215;
+  --color-green: #879A39;
+  --color-cyan: #3AA99F;
+  --color-blue: #4385BE;
+  --color-purple: #8B7EC8;
+  --color-pink: #CE5D97;
 
-/* Code blocks */
-.markdown-rendered code {
-  color: #3AA99F;
-}
+  --accent-h: 175;
+  --accent-s: 57%;
+  --accent-l: 33%;
 
-/* Syntax highlighting */
-.cm-s-obsidian span.cm-keyword { color: #879A39; }
-.cm-s-obsidian span.cm-string { color: #3AA99F; }
-.cm-s-obsidian span.cm-number { color: #8B7EC8; }
-.cm-s-obsidian span.cm-comment { color: #878580; }
-.cm-s-obsidian span.cm-operator { color: #D14D41; }
-.cm-s-obsidian span.cm-def { color: #DA702C; }
+  --color-base-00: #100F0F;
+  --color-base-05: #100F0F;
+  --color-base-10: #1C1B1A;
+  --color-base-20: #1C1B1A;
+  --color-base-25: #282726;
 
-/* Links */
-.markdown-rendered a {
-  color: var(--text-link);
-}
+  --color-base-30: #282726;
+  --color-base-35: #343331;
+  --color-base-40: #403E3C;
 
-/* Blockquotes */
-.markdown-rendered blockquote {
-  border-left-color: #343331;
-}
-
-/* Active elements */
-.workspace-leaf.mod-active .workspace-leaf-header-title {
-  color: var(--interactive-accent);
-}
-
-.nav-file-title.is-active {
-  color: var(--interactive-accent);
-}
-
-/* Search results */
-.search-result-file-title {
-  color: var(--interactive-accent);
+  --color-base-50: #575653;
+  --color-base-60: #6F6E69;
+  --color-base-70: #878580;
+  --color-base-100: #CECDC3;
 }
